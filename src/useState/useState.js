@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
 // function countInitial() {
 //   console.log('run function');
 //   return 4;
@@ -37,6 +39,8 @@ function State() {
           <span>{count}  </span>
           <span>{theme}</span>
           <button onClick={incrementeStateCount}>+</button>
+          <br/>
+          <Link to="/">Back to home</Link>
       </>
     );
   }

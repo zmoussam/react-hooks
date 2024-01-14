@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Effect() {
 
@@ -37,6 +38,8 @@ function Effect() {
         {items.map(item => {
             return <pre>{JSON.stringify(item)}</pre>
         })}
+         <br/>
+        <Link to="/">Back to home</Link>
     </>
     // <div>
     //     {windowWidth}
